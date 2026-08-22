@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Personal data — remove these lines if you WANT your log/settings versioned
+# (committing them is the simplest way to persist history on Streamlit Cloud)
+# data/consumption_log.csv
+# data/settings.json

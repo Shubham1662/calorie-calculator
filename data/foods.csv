@@ -1,0 +1,112 @@
+food_name,category,food_group,serving_unit,calories_per_serving
+Plain Roti / Chapati,Veg,Staple,1 medium roti,100
+Tandoori Roti,Veg,Staple,1 roti,120
+Butter Naan,Veg,Staple,1 naan,300
+Plain Paratha,Veg,Staple,1 paratha,180
+Aloo Paratha,Veg,Staple,1 paratha,290
+Gobi Paratha,Veg,Staple,1 paratha,270
+Puri,Veg,Staple,1 puri,110
+Bhatura,Veg,Staple,1 bhatura,230
+Steamed Rice,Veg,Staple,1 cup (150 g),200
+Jeera Rice,Veg,Staple,1 cup,250
+Veg Pulao,Veg,Staple,1 cup,220
+Veg Biryani,Veg,Staple,1 cup,240
+Chicken Biryani,Non-Veg,Staple,1 cup,290
+Mutton Biryani,Non-Veg,Staple,1 cup,320
+Egg Biryani,Non-Veg,Staple,1 cup,260
+Khichdi,Veg,Staple,1 cup,200
+Curd Rice,Veg,Staple,1 cup,220
+Lemon Rice,Veg,Staple,1 cup,250
+Sabudana Khichdi,Veg,Staple,1 cup,280
+Plain Dosa,Veg,Breakfast,1 dosa,170
+Masala Dosa,Veg,Breakfast,1 dosa,270
+Idli,Veg,Breakfast,1 idli,60
+Medu Vada,Veg,Breakfast,1 vada,100
+Uttapam,Veg,Breakfast,1 uttapam,200
+Upma,Veg,Breakfast,1 cup,210
+Poha,Veg,Breakfast,1 cup,180
+Oats Porridge,Veg,Breakfast,1 bowl,170
+Cornflakes with Milk,Veg,Breakfast,1 bowl,200
+Bread Slice,Veg,Breakfast,1 slice,70
+Peanut Butter,Veg,Breakfast,1 tbsp,95
+Sprouts Salad,Veg,Breakfast,1 cup,120
+Dal Tadka,Veg,Curry,1 cup,180
+Dal Makhani,Veg,Curry,1 cup,280
+Chana Masala,Veg,Curry,1 cup,240
+Rajma Masala,Veg,Curry,1 cup,230
+Sambar,Veg,Curry,1 cup,130
+Kadhi Pakora,Veg,Curry,1 cup,210
+Palak Paneer,Veg,Curry,1 cup,260
+Paneer Butter Masala,Veg,Curry,1 cup,340
+Kadai Paneer,Veg,Curry,1 cup,300
+Malai Kofta,Veg,Curry,1 cup,250
+Mushroom Masala,Veg,Curry,1 cup,190
+Aloo Gobi,Veg,Curry,1 cup,150
+Bhindi Masala,Veg,Curry,1 cup,130
+Baingan Bharta,Veg,Curry,1 cup,160
+Mix Veg Curry,Veg,Curry,1 cup,170
+Chicken Curry,Non-Veg,Curry,1 cup,280
+Butter Chicken,Non-Veg,Curry,1 cup,380
+Chicken Tikka,Non-Veg,Curry,6 pieces,260
+Tandoori Chicken,Non-Veg,Curry,2 pieces,260
+Chicken 65,Non-Veg,Curry,1 cup,300
+Fish Curry,Non-Veg,Curry,1 cup,230
+Fish Fry,Non-Veg,Curry,1 piece,200
+Prawn Curry,Non-Veg,Curry,1 cup,240
+Mutton Curry,Non-Veg,Curry,1 cup,320
+Mutton Keema,Non-Veg,Curry,1 cup,350
+Egg Curry,Non-Veg,Curry,1 cup (2 eggs),240
+Boiled Egg,Non-Veg,Curry,1 egg,78
+Omelette,Non-Veg,Breakfast,2 eggs,180
+Egg Bhurji,Non-Veg,Breakfast,2 eggs,200
+Samosa,Veg,Snack,1 samosa,260
+Kachori,Veg,Snack,1 kachori,190
+Pakora,Veg,Snack,6 pieces,280
+Vada Pav,Veg,Snack,1 vada pav,290
+Pav Bhaji,Veg,Snack,1 plate,400
+Chole Bhature,Veg,Snack,1 plate,450
+Dhokla,Veg,Snack,2 pieces,120
+Pani Puri,Veg,Snack,6 puris,180
+Bhel Puri,Veg,Snack,1 plate,230
+Sev Puri,Veg,Snack,6 pieces,220
+Veg Momos,Veg,Snack,6 momos,210
+Chicken Momos,Non-Veg,Snack,6 momos,250
+Spring Roll,Veg,Snack,1 roll,150
+Veg Sandwich,Veg,Snack,1 sandwich,200
+Maggi Noodles,Veg,Snack,1 pack cooked,350
+Chivda,Veg,Snack,1 small bowl (30 g),150
+Roasted Chana,Veg,Snack,1 handful (30 g),110
+Gulab Jamun,Veg,Sweet,1 piece,150
+Rasgulla,Veg,Sweet,1 piece,120
+Jalebi,Veg,Sweet,2 pieces (50 g),200
+Kheer,Veg,Sweet,1 cup,250
+Gajar Halwa,Veg,Sweet,0.5 cup,250
+Besan Ladoo,Veg,Sweet,1 ladoo,180
+Kaju Katli,Veg,Sweet,1 piece,90
+Rasmalai,Veg,Sweet,1 piece,180
+Full-Fat Milk,Veg,Dairy,1 cup (250 ml),150
+Toned Milk,Veg,Dairy,1 cup (250 ml),120
+Curd / Dahi,Veg,Dairy,1 cup,100
+Buttermilk / Chaas,Veg,Dairy,1 glass,40
+Sweet Lassi,Veg,Dairy,1 glass,220
+Paneer (raw),Veg,Dairy,100 g,265
+Ghee,Veg,Dairy,1 tbsp,120
+Butter,Veg,Dairy,1 tbsp,100
+Masala Chai (milk + sugar),Veg,Beverage,1 cup,90
+Black Tea (no sugar),Veg,Beverage,1 cup,5
+Filter Coffee (milk + sugar),Veg,Beverage,1 cup,90
+Black Coffee (no sugar),Veg,Beverage,1 cup,5
+Nimbu Pani (sweet),Veg,Beverage,1 glass,60
+Fresh Lime Soda,Veg,Beverage,1 glass,60
+Coconut Water,Veg,Beverage,1 glass,45
+Mango Shake,Veg,Beverage,1 glass,250
+Banana,Veg,Fruit,1 medium,105
+Apple,Veg,Fruit,1 medium,95
+Mango,Veg,Fruit,1 medium,150
+Orange,Veg,Fruit,1 medium,62
+Papaya,Veg,Fruit,1 cup cubes,60
+Guava,Veg,Fruit,1 medium,60
+Grapes,Veg,Fruit,1 cup,100
+Watermelon,Veg,Fruit,1 cup cubes,46
+Pomegranate,Veg,Fruit,1 cup arils,130
+Chikoo,Veg,Fruit,1 medium,80

@@ -110,3 +110,173 @@ Grapes,Veg,Fruit,1 cup,100
 Watermelon,Veg,Fruit,1 cup cubes,46
 Pomegranate,Veg,Fruit,1 cup arils,130
 Chikoo,Veg,Fruit,1 medium,80
+Besan Chilla,Veg,Breakfast,1 chilla,120
+Moong Dal Chilla,Veg,Breakfast,1 chilla,110
+Oats Chilla,Veg,Breakfast,1 chilla,130
+Rava Dosa,Veg,Breakfast,1 dosa,220
+Neer Dosa,Veg,Breakfast,1 dosa,90
+Pesarattu,Veg,Breakfast,1 dosa,200
+Adai Dosa,Veg,Breakfast,1 adai,220
+Appam,Veg,Breakfast,1 appam,120
+Idiyappam,Veg,Breakfast,2 pieces,130
+Puttu,Veg,Breakfast,1 cup,200
+Pongal,Veg,Breakfast,1 cup,250
+Ragi Dosa,Veg,Breakfast,1 dosa,150
+Ragi Idli,Veg,Breakfast,1 idli,70
+Ragi Porridge (Ragi Malt),Veg,Breakfast,1 cup,150
+Oats Idli,Veg,Breakfast,2 idlis,120
+Oats Upma,Veg,Breakfast,1 cup,220
+Masala Oats,Veg,Breakfast,1 bowl,180
+Daliya Porridge,Veg,Breakfast,1 bowl,150
+Vermicelli Upma (Semiya),Veg,Breakfast,1 cup,220
+Muesli with Milk,Veg,Breakfast,1 bowl,250
+Multigrain Bread,Veg,Breakfast,1 slice,80
+French Toast,Non-Veg,Breakfast,1 slice,150
+Ragi Mudde,Veg,Staple,1 ball,140
+Ragi Roti,Veg,Staple,1 roti,120
+Jowar Roti,Veg,Staple,1 roti,110
+Bajra Roti,Veg,Staple,1 roti,120
+Makki di Roti,Veg,Staple,1 roti,200
+Missi Roti,Veg,Staple,1 roti,130
+Roti with Ghee,Veg,Staple,1 roti,130
+Rumali Roti,Veg,Staple,1 roti,120
+Garlic Naan,Veg,Staple,1 naan,320
+Kulcha,Veg,Staple,1 kulcha,210
+Lachha Paratha,Veg,Staple,1 paratha,260
+Paneer Paratha,Veg,Staple,1 paratha,300
+Methi Paratha,Veg,Staple,1 paratha,200
+Onion Paratha,Veg,Staple,1 paratha,250
+Mooli Paratha,Veg,Staple,1 paratha,240
+Thepla,Veg,Staple,1 thepla,130
+Atta Noodles,Veg,Staple,1 pack cooked,300
+Tomato Rice,Veg,Staple,1 cup,230
+Tamarind Rice (Puliyogare),Veg,Staple,1 cup,260
+Bisi Bele Bath,Veg,Staple,1 cup,260
+Veg Fried Rice,Veg,Staple,1 cup,250
+Chicken Fried Rice,Non-Veg,Staple,1 cup,290
+Egg Fried Rice,Non-Veg,Staple,1 cup,260
+Ghee Rice,Veg,Staple,1 cup,280
+Moong Dal,Veg,Curry,1 cup,150
+Masoor Dal,Veg,Curry,1 cup,160
+Chana Dal,Veg,Curry,1 cup,190
+Dal Fry,Veg,Curry,1 cup,200
+Kala Chana Curry,Veg,Curry,1 cup,210
+Lobia (Black-Eyed Peas) Curry,Veg,Curry,1 cup,200
+Green Peas Masala,Veg,Curry,1 cup,180
+Matar Paneer,Veg,Curry,1 cup,280
+Shahi Paneer,Veg,Curry,1 cup,350
+Paneer Bhurji,Veg,Curry,1 cup,290
+Paneer Tikka,Veg,Curry,6 pieces,280
+Chilli Paneer,Veg,Curry,1 cup,320
+Veg Manchurian,Veg,Curry,1 cup,280
+Gobi Manchurian,Veg,Curry,1 cup,260
+Veg Korma,Veg,Curry,1 cup,230
+Navratan Korma,Veg,Curry,1 cup,280
+Aloo Matar,Veg,Curry,1 cup,180
+Jeera Aloo,Veg,Curry,1 cup,160
+Dum Aloo,Veg,Curry,1 cup,220
+Methi Aloo,Veg,Curry,1 cup,160
+Lauki Sabzi,Veg,Curry,1 cup,100
+Karela Sabzi,Veg,Curry,1 cup,110
+Cabbage Sabzi,Veg,Curry,1 cup,100
+Beans Poriyal,Veg,Curry,1 cup,120
+Avial,Veg,Curry,1 cup,150
+Kootu,Veg,Curry,1 cup,140
+Rasam,Veg,Curry,1 cup,60
+Sarson ka Saag,Veg,Curry,1 cup,180
+Soya Chunk Curry,Veg,Curry,1 cup,220
+Chilli Chicken,Non-Veg,Curry,1 cup,320
+Chicken Seekh Kebab,Non-Veg,Curry,2 kebabs,220
+Chicken Lollipop,Non-Veg,Curry,4 pieces,300
+Grilled Chicken Breast,Non-Veg,Curry,100 g,165
+Chicken Stew,Non-Veg,Curry,1 cup,250
+Mutton Rogan Josh,Non-Veg,Curry,1 cup,330
+Fish Tikka,Non-Veg,Curry,6 pieces,240
+Aloo Tikki,Veg,Snack,1 tikki,180
+Batata Vada,Veg,Snack,1 vada,200
+Dahi Puri,Veg,Snack,6 puris,260
+Dahi Bhalla,Veg,Snack,2 pieces,240
+Papdi Chaat,Veg,Snack,1 plate,300
+Aloo Chaat,Veg,Snack,1 plate,250
+Masala Sweet Corn,Veg,Snack,1 cup,140
+Murmura (Puffed Rice),Veg,Snack,1 bowl,55
+Khakhra,Veg,Snack,1 khakhra,120
+Fafda,Veg,Snack,2 pieces,180
+Handvo,Veg,Snack,1 piece,180
+Khandvi,Veg,Snack,5 pieces,150
+Misal Pav,Veg,Snack,1 plate,450
+Veg Cutlet,Veg,Snack,1 cutlet,150
+Paneer Pakora,Veg,Snack,4 pieces,300
+Bread Pakora,Veg,Snack,1 piece,260
+Sabudana Vada,Veg,Snack,1 vada,160
+Aloo Bhujia,Veg,Snack,30 g,160
+Namkeen Mixture,Veg,Snack,30 g,160
+Mathri,Veg,Snack,2 pieces,200
+Murukku (Chakli),Veg,Snack,2 pieces,150
+Banana Chips,Veg,Snack,30 g,160
+Potato Chips,Veg,Snack,30 g,160
+Roasted Makhana,Veg,Snack,1 cup,100
+Popcorn (plain),Veg,Snack,2 cups,60
+Veg Kathi Roll,Veg,Snack,1 roll,350
+Chicken Kathi Roll,Non-Veg,Snack,1 roll,420
+Chicken Shawarma Roll,Non-Veg,Snack,1 roll,400
+Veg Burger,Veg,Snack,1 burger,350
+Pizza Slice,Veg,Snack,1 slice,250
+White Sauce Pasta,Veg,Snack,1 cup,350
+Cheese Sandwich,Veg,Snack,1 sandwich,280
+Tomato Soup,Veg,Other,1 bowl,100
+Sweet Corn Soup,Veg,Other,1 bowl,130
+Ragi Halwa,Veg,Sweet,0.5 cup,220
+Oats Halwa,Veg,Sweet,0.5 cup,240
+Sooji Halwa,Veg,Sweet,0.5 cup,240
+Atta Halwa,Veg,Sweet,0.5 cup,250
+Moong Dal Halwa,Veg,Sweet,0.5 cup,300
+Lauki Halwa,Veg,Sweet,0.5 cup,200
+Badam Halwa,Veg,Sweet,0.5 cup,320
+Motichoor Ladoo,Veg,Sweet,1 ladoo,150
+Rava Ladoo,Veg,Sweet,1 ladoo,140
+Til Ladoo,Veg,Sweet,1 ladoo,120
+Peanut Chikki,Veg,Sweet,1 piece (25 g),120
+Mysore Pak,Veg,Sweet,1 piece,200
+Sandesh,Veg,Sweet,1 piece,100
+Peda,Veg,Sweet,1 piece,110
+Milk Barfi,Veg,Sweet,1 piece,150
+Coconut Barfi,Veg,Sweet,1 piece,160
+Soan Papdi,Veg,Sweet,1 piece,150
+Balushahi,Veg,Sweet,1 piece,220
+Shrikhand,Veg,Sweet,0.5 cup,240
+Basundi,Veg,Sweet,0.5 cup,250
+Phirni,Veg,Sweet,0.5 cup,220
+Sheer Khurma,Veg,Sweet,1 cup,300
+Modak,Veg,Sweet,1 modak,130
+Puran Poli,Veg,Sweet,1 poli,300
+Malpua,Veg,Sweet,1 piece,220
+Cheese Slice,Veg,Dairy,1 slice,70
+Flavored Yogurt,Veg,Dairy,1 cup,150
+Milk with Bournvita,Veg,Dairy,1 cup,220
+Soya Milk,Veg,Dairy,1 cup,80
+Almonds,Veg,Snack,10 nuts,70
+Cashews,Veg,Snack,10 nuts,90
+Walnuts,Veg,Snack,5 halves,65
+Roasted Peanuts,Veg,Snack,30 g,170
+Dates,Veg,Snack,3 dates,70
+Raisins,Veg,Snack,1 tbsp,45
+Cold Coffee,Veg,Beverage,1 glass,200
+Badam Milk,Veg,Beverage,1 glass,220
+Banana Shake,Veg,Beverage,1 glass,230
+Sugarcane Juice,Veg,Beverage,1 glass,180
+Fresh Orange Juice,Veg,Beverage,1 glass,110
+Mosambi Juice,Veg,Beverage,1 glass,120
+Aam Panna,Veg,Beverage,1 glass,100
+Jaljeera,Veg,Beverage,1 glass,30
+Thandai,Veg,Beverage,1 glass,250
+Green Tea,Veg,Beverage,1 cup,2
+Salted Lassi (Namkeen),Veg,Beverage,1 glass,100
+Sattu Drink,Veg,Beverage,1 glass,150
+Pineapple,Veg,Fruit,1 cup cubes,82
+Kiwi,Veg,Fruit,1 fruit,42
+Strawberries,Veg,Fruit,1 cup,50
+Custard Apple (Sitaphal),Veg,Fruit,1 medium,100
+Lychee,Veg,Fruit,10 fruits,60
+Muskmelon,Veg,Fruit,1 cup cubes,55
+Pear,Veg,Fruit,1 medium,100

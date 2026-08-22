@@ -51,7 +51,7 @@ calorie_Calculator/
 │   ├── calculations.py       # calorie math (pure functions)
 │   └── analytics.py          # 14-day aggregation + chart
 ├── data/
-│   ├── foods.csv             # food database (111 Indian foods, editable)
+│   ├── foods.csv             # food database (281 Indian foods, editable)
 │   ├── consumption_log.csv   # created on first entry
 │   └── settings.json         # created when target is changed
 ├── .streamlit/config.toml    # theme + server config
@@ -135,7 +135,7 @@ Calories are stored **at log time** so editing a food's calories later never rew
 ├──────────────────────────────┤
 │ Foods tab                    │
 │  add-food form + searchable  │
-│  database table (111 items)  │
+│  database table (281 items)  │
 └──────────────────────────────┘
 ```
 
@@ -153,7 +153,7 @@ Standard library only beyond that (`pathlib`, `json`, `datetime`). Deliberately 
 
 ## 8. Implementation plan (as built)
 
-1. Food dataset — `data/foods.csv`, 111 Indian foods with serving-based calories.
+1. Food dataset — `data/foods.csv`, 281 Indian foods with serving-based calories.
 2. Persistence layer — `src/data_store.py` (all file I/O in one module).
 3. Calculation layer — `src/calculations.py` (pure functions, easily testable).
 4. Analytics layer — `src/analytics.py` (14-day spine + Altair chart).

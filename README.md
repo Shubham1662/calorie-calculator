@@ -5,7 +5,7 @@ Python + Streamlit, stores everything in CSV files — no database, no login.
 
 **Features**
 
-- 111-item Indian food database (veg + non-veg) with per-serving calories
+- 281-item Indian food database (veg + non-veg) with per-serving calories
 - Log foods per day with quantity; per-food and daily totals computed automatically
 - Configurable daily calorie target with remaining-calories display
 - 14-day intake trend chart with target line and over/under coloring

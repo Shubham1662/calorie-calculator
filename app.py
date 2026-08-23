@@ -48,26 +48,50 @@ with tab_log:
     selected_date = st.date_input("Date", value=date.today(), max_value=date.today())
     day = selected_date.isoformat()
 
-    with st.form("add_entry", clear_on_submit=True):
-        food_name = st.selectbox(
-            "Food (type to search)",
-            options=foods["food_name"].tolist(),
-            index=None,
-            placeholder="e.g. Masala Dosa",
-        )
-        quantity = st.number_input("Quantity (servings)", min_value=0.25,
-                                   max_value=20.0, value=1.0, step=0.25)
-        submitted = st.form_submit_button("➕ Add food", type="primary")
+    food_name = st.selectbox(
+        "Food (type to search)",
+        options=foods["food_name"].tolist(),
+        index=None,
+        placeholder="e.g. Masala Dosa",
+        key="log_food",
+    )
 
-    if submitted:
-        if food_name is None:
-            st.warning("Pick a food first.")
-        else:
-            food = foods.loc[foods["food_name"] == food_name].iloc[0]
-            kcal = calculations.calories_for(food["calories_per_serving"], quantity)
-            data_store.append_log_entry(day, food_name, quantity,
-                                        food["serving_unit"], kcal)
+    if food_name is not None:
+        food = foods.loc[foods["food_name"] == food_name].iloc[0]
+        units = calculations.unit_options(food["serving_unit"])
+
+        col_unit, col_qty = st.columns(2)
+        unit = col_unit.selectbox("Unit", units, key=f"unit_{food_name}")
+
+        # Quantity defaults tuned per unit: grams count in 10s from the
+        # food's own serving weight; pieces start at one native serving.
+        if unit == "gram":
+            qty_args = dict(min_value=1.0, max_value=2000.0, step=10.0,
+                            value=float(food["serving_weight_g"]))
+        elif unit == "number":
+            qty_args = dict(min_value=0.5, max_value=50.0, step=0.5,
+                            value=calculations.pieces_per_serving(food["serving_unit"]))
+        else:  # bowl / cup / glass / plate / tbsp / tsp
+            qty_args = dict(min_value=0.25, max_value=20.0, step=0.25, value=1.0)
+        quantity = col_qty.number_input(f"How much ({unit})",
+                                        key=f"qty_{food_name}_{unit}", **qty_args)
+
+        kcal = calculations.calories_for_unit(
+            food["calories_per_serving"], food["serving_weight_g"],
+            food["serving_unit"], unit, quantity)
+        per_unit = calculations.calories_for_unit(
+            food["calories_per_serving"], food["serving_weight_g"],
+            food["serving_unit"], unit, 1)
+        basis = "1 piece" if unit == "number" else f"1 {unit}"
+        st.caption(f"≈ **{kcal:.0f} kcal** · {food_name}: {per_unit:.0f} kcal per "
+                   f"{basis} (native serving: {food['serving_unit']}, "
+                   f"~{food['serving_weight_g']:g} g)")
+
+        if st.button("➕ Add food", type="primary"):
+            log_unit = "piece" if unit == "number" else unit
+            data_store.append_log_entry(day, food_name, quantity, log_unit, kcal)
             st.toast(f"Added {food_name} — {kcal:.0f} kcal")
+            st.session_state.pop("log_food", None)
             st.rerun()
 
     consumed = calculations.total_for_date(log, day)
@@ -87,9 +111,10 @@ with tab_log:
         st.caption("Nothing logged yet for this day.")
     for idx, row in entries.iterrows():
         col_text, col_btn = st.columns([5, 1])
+        amount = (f"{row['quantity']:g} g" if row["serving_unit"] == "gram"
+                  else f"{row['quantity']:g} × {row['serving_unit']}")
         col_text.markdown(
-            f"**{row['food_name']}** · {row['quantity']:g} × {row['serving_unit']} "
-            f"· **{row['calories']:.0f} kcal**"
+            f"**{row['food_name']}** · {amount} · **{row['calories']:.0f} kcal**"
         )
         if col_btn.button("🗑️", key=f"del_{idx}", help="Delete entry"):
             data_store.delete_log_entry(idx)
@@ -128,12 +153,16 @@ with tab_foods:
         new_unit = st.text_input("Serving unit", placeholder="e.g. 1 cup / 2 pieces / 100 g")
         new_kcal = st.number_input("Calories per serving", min_value=1,
                                    max_value=2000, value=100)
+        new_weight = st.number_input("Weight of one serving (grams)", min_value=1,
+                                     max_value=2000, value=100,
+                                     help="Used to convert between grams, bowls and cups.")
         food_submitted = st.form_submit_button("💾 Save food", type="primary")
 
     if food_submitted:
         if not new_name.strip() or not new_unit.strip():
             st.warning("Food name and serving unit are required.")
-        elif data_store.add_food(new_name, new_category, new_group, new_unit, new_kcal):
+        elif data_store.add_food(new_name, new_category, new_group, new_unit,
+                                 new_kcal, new_weight):
             st.success(f"Saved {new_name.strip()} ({new_kcal} kcal per {new_unit.strip()}).")
             st.rerun()
         else:
@@ -148,6 +177,7 @@ with tab_foods:
         view.rename(columns={
             "food_name": "Food", "category": "Category", "food_group": "Group",
             "serving_unit": "Serving", "calories_per_serving": "kcal",
+            "serving_weight_g": "Weight (g)",
         }),
         hide_index=True, width="stretch", height=400,
     )

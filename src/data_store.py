@@ -16,7 +16,8 @@ FOODS_CSV = DATA_DIR / "foods.csv"
 LOG_CSV = DATA_DIR / "consumption_log.csv"
 SETTINGS_JSON = DATA_DIR / "settings.json"
 
-FOOD_COLUMNS = ["food_name", "category", "food_group", "serving_unit", "calories_per_serving"]
+FOOD_COLUMNS = ["food_name", "category", "food_group", "serving_unit",
+                "calories_per_serving", "serving_weight_g"]
 LOG_COLUMNS = ["date", "food_name", "quantity", "serving_unit", "calories"]
 DEFAULT_TARGET = 2000
 
@@ -26,7 +27,8 @@ def load_foods() -> pd.DataFrame:
 
 
 def add_food(food_name: str, category: str, food_group: str,
-             serving_unit: str, calories_per_serving: float) -> bool:
+             serving_unit: str, calories_per_serving: float,
+             serving_weight_g: float) -> bool:
     """Append a food to the database. Returns False if the name already exists."""
     foods = load_foods()
     if foods["food_name"].str.strip().str.lower().eq(food_name.strip().lower()).any():
@@ -37,6 +39,7 @@ def add_food(food_name: str, category: str, food_group: str,
         "food_group": food_group,
         "serving_unit": serving_unit.strip(),
         "calories_per_serving": calories_per_serving,
+        "serving_weight_g": serving_weight_g,
     }])
     pd.concat([foods, row], ignore_index=True).to_csv(FOODS_CSV, index=False)
     return True

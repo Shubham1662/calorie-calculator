@@ -3,6 +3,9 @@ __pycache__/
 .venv/
 venv/
 
+# Google service-account credentials — never commit
+.streamlit/secrets.toml
+
 # Personal data — remove these lines if you WANT your log/settings versioned
 # (committing them is the simplest way to persist history on Streamlit Cloud)
 # data/consumption_log.csv
